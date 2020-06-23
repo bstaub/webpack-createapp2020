@@ -1,0 +1,27 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true,
+        "node": true,
+        "jquery": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "html"
+    ],
+    "rules": {
+        "no-console": 0,
+        "no-unused-vars": [1, { "argsIgnorePattern": "res|next|^err"}],
+        "arrow-body-style": [2, "as-needed"],
+        "comma-dangle": 0,
+        "func-names": 0
+    }
+}

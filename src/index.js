@@ -1,20 +1,29 @@
-import { kebabCase } from 'lodash';
-import { addTax } from './checkout';
-import { greeter } from './greeter';
-import { sumup } from './sumup';
 import axios from 'axios';
-import "./styles.scss";
+import { kebabCase } from 'lodash';
+import { greeter } from './greeter.ts';
+import sumup from './sumup.ts';
+import addTax from './checkout';
 
-console.log(kebabCase("hallo Bruno du bist der beste7"));
-console.log(addTax(10,0.15));
-console.log(greeter("Bruno Staub"));
-console.log(sumup([1,3,5,7]));
+import './styles.scss';
 
-var p = document.createElement('p');
+const p = document.createElement('p');
+
+console.log(kebabCase('hallo Bruno du bist der beste7'));
+console.log(addTax(10, 0.15));
+console.log(greeter('Bruno Staub'));
+console.log(sumup([1, 3, 5, 7]));
+
 p.innerHTML = 'Start..';
 document.body.prepend(p);
 
-var app = document.getElementById('app');
+const app = document.getElementById('app');
+app.innerHTML = 'App Output';
+
+const person = {
+  vorname: 'bruno',
+  nachname: 'staub',
+};
+console.log(person.vorname);
 
 axios.get('https://jsonplaceholder.typicode.com/users').then((res) => {
   console.log('daten: ', res.data);

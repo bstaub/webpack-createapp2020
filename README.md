@@ -4,7 +4,7 @@ Empty project.
 
 ## Building and running on localhost, Author: B.Staub, 23.06.2020
 
-First install dependencies: i also incuded some demo files and loadash, axios, ts, see console output ctrl+alt+i
+First install dependencies: i also incuded some demo files and loadash, axios, ts, crashreload, see console output ctrl+alt+i
 
 ```sh
 npm install
@@ -38,6 +38,15 @@ npm run serve
 
 ```sh
 node dist/bundle.js
+```
+
+## Linting ESLint
+
+```
+https://eslint.org/docs/user-guide/getting-started
+Good Setup with Template Assistent done: 
+npx eslint --init
+npm run eslint  -> checks all ts,js in src folder
 ```
 
 ## Credits

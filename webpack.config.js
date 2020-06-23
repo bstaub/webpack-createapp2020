@@ -33,7 +33,7 @@ const config = {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 9000,
-    watchOptions: {  //added autoreload after syntax crash :-)
+    watchOptions: { // added autoreload after syntax crash :-)
       aggregateTimeout: 300,
       poll: 1000,
     },
@@ -41,7 +41,7 @@ const config = {
   devtool: false,
   plugins: [
     new webpack.SourceMapDevToolPlugin({}),
-    new HtmlWebpackPlugin({  //added for hotreload html
+    new HtmlWebpackPlugin({ // added for hotreload html
       filename: 'index.html',
       template: './src/index.html',
     }),
