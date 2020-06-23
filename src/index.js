@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { kebabCase } from 'lodash';
-import { greeter } from './greeter.ts';
+import greeter from './greeter.ts';
 import sumup from './sumup.ts';
 import addTax from './checkout';
 

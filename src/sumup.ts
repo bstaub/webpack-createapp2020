@@ -1,4 +1,4 @@
-export default function sumup( zahlen: number[]) {
+export default function sumup(zahlen: number[]) {
   // eslint-disable-next-line arrow-body-style
   return zahlen.reduce((acc, val) => {
     return acc + val;
